@@ -8,6 +8,10 @@
     <link rel="icon" href="unitygameicon.jpeg">
   </head>
   <body>
+    <header>
+      <h1 id="title">Unity 2D Game</h1>
+    </header>
+
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=540></canvas>
       <div id="unity-loading-bar">
@@ -47,7 +51,7 @@
         if (type == 'error') div.style = 'background: red; padding: 10px;';
         else {
           if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-          setTimeout(function() {
+          setTimeout(function () {
             warningBanner.removeChild(div);
             updateBannerVisibility();
           }, 5000);
